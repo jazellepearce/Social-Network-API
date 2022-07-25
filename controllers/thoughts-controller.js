@@ -93,3 +93,5 @@ deleteReaction({params}, res) {
 }
 
 }
+
+module.exports = thoughtsController;

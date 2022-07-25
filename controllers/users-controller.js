@@ -4,7 +4,7 @@ const usersController = {
 
     createUsers({body}, res) {
         Users.create(body)
-        .then(dbUserData => res.json(dbUsersData))
+        .then(dbUsersData => res.json(dbUsersData))
         .catch(err => res.status(400).json(err));
     },
 
@@ -90,3 +90,6 @@ deleteFriend({ params }, res) {
 }
 
 };
+
+
+module.exports = usersController;
